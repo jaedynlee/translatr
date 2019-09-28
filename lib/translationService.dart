@@ -35,8 +35,7 @@ class TranslationService {
     if (response.statusCode != 200) {
       return 'Too many requests; try again later.';
     }
-    print(responseJson['contents']['translation']);
-    String translation = responseJson['contents']['translation'];
+    String translation = responseJson['contents']['translated'];
     return translation;
   }
 }
